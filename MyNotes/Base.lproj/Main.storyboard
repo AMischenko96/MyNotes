@@ -20,23 +20,23 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ListNoteTableViewCell" rowHeight="54" id="2vU-F1-QhK" customClass="ListNoteTableViewCell" customModule="MyNotes" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ListNoteTableViewCell" rowHeight="54" id="8WR-5f-1Vl" customClass="ListNoteTableViewCell" customModule="MyNotes" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="24.5" width="414" height="54"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2vU-F1-QhK" id="L6O-YO-C1o">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="8WR-5f-1Vl" id="K9V-ma-ddo">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="54"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="4HH-im-qSl">
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="6nw-gf-Kr2">
                                                     <rect key="frame" x="10" y="10" width="394" height="34"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qer-h0-jhT">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title Lbl" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szu-Pl-FG0">
                                                             <rect key="frame" x="0.0" y="0.0" width="394" height="17.5"/>
                                                             <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k5b-jX-cyA">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description Lbl" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Lw-UF-MPf">
                                                             <rect key="frame" x="0.0" y="19.5" width="394" height="14.5"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -44,21 +44,21 @@
                                                         </label>
                                                     </subviews>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="40" id="4nY-Zf-pwt"/>
+                                                        <constraint firstAttribute="height" constant="40" id="z3b-KH-52Q"/>
                                                     </constraints>
                                                 </stackView>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                                             <constraints>
-                                                <constraint firstItem="4HH-im-qSl" firstAttribute="leading" secondItem="L6O-YO-C1o" secondAttribute="leading" constant="10" id="Slq-ay-gZT"/>
-                                                <constraint firstAttribute="trailing" secondItem="4HH-im-qSl" secondAttribute="trailing" constant="10" id="Xrf-0u-AJo"/>
-                                                <constraint firstAttribute="bottom" secondItem="4HH-im-qSl" secondAttribute="bottom" constant="10" id="p5z-53-Fsn"/>
-                                                <constraint firstItem="4HH-im-qSl" firstAttribute="top" secondItem="L6O-YO-C1o" secondAttribute="top" constant="10" id="xCN-sR-2KN"/>
+                                                <constraint firstItem="6nw-gf-Kr2" firstAttribute="top" secondItem="K9V-ma-ddo" secondAttribute="top" constant="10" id="BQB-pc-amU"/>
+                                                <constraint firstItem="6nw-gf-Kr2" firstAttribute="leading" secondItem="K9V-ma-ddo" secondAttribute="leading" constant="10" id="bGy-0c-km4"/>
+                                                <constraint firstAttribute="trailing" secondItem="6nw-gf-Kr2" secondAttribute="trailing" constant="10" id="gf0-Gz-l5q"/>
+                                                <constraint firstAttribute="bottom" secondItem="6nw-gf-Kr2" secondAttribute="bottom" constant="10" id="oCM-Y3-MYP"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="descriptionLbl" destination="k5b-jX-cyA" id="wK1-az-vPL"/>
-                                            <outlet property="titleLbl" destination="qer-h0-jhT" id="oxb-Du-nze"/>
+                                            <outlet property="descriptionLbl" destination="8Lw-UF-MPf" id="7lE-Gq-vQp"/>
+                                            <outlet property="titleLbl" destination="szu-Pl-FG0" id="2Tz-pJ-52p"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -125,7 +125,7 @@
                             <constraint firstItem="jW7-73-z5U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jr8-lQ-heN"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="My Notes" id="HnO-ry-jnj"/>
+                    <navigationItem key="navigationItem" title="Заметки" id="HnO-ry-jnj"/>
                     <connections>
                         <outlet property="notesCountLbl" destination="xwr-eQ-WPi" id="tnX-Ej-qkv"/>
                         <outlet property="tableView" destination="jW7-73-z5U" id="ZoZ-0i-qwo"/>
@@ -144,11 +144,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MZz-vZ-Kn5">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="718"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <color key="textColor" systemColor="labelColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
                                     <outlet property="delegate" destination="FJh-lZ-8ve" id="8DP-0Q-DkI"/>
                                 </connections>
@@ -157,10 +157,10 @@
                         <viewLayoutGuide key="safeArea" id="UJc-D3-Vjw"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="UJc-D3-Vjw" firstAttribute="trailing" secondItem="MZz-vZ-Kn5" secondAttribute="trailing" id="1TC-Dm-qud"/>
-                            <constraint firstItem="MZz-vZ-Kn5" firstAttribute="leading" secondItem="UJc-D3-Vjw" secondAttribute="leading" id="5ZB-V5-8nm"/>
-                            <constraint firstItem="MZz-vZ-Kn5" firstAttribute="top" secondItem="UJc-D3-Vjw" secondAttribute="top" id="bkc-3Y-mot"/>
-                            <constraint firstItem="UJc-D3-Vjw" firstAttribute="bottom" secondItem="MZz-vZ-Kn5" secondAttribute="bottom" id="zft-sq-LWM"/>
+                            <constraint firstItem="MZz-vZ-Kn5" firstAttribute="top" secondItem="UJc-D3-Vjw" secondAttribute="top" id="Mqx-4Y-8KA"/>
+                            <constraint firstItem="MZz-vZ-Kn5" firstAttribute="trailing" secondItem="UJc-D3-Vjw" secondAttribute="trailing" id="WMF-oX-ePp"/>
+                            <constraint firstItem="MZz-vZ-Kn5" firstAttribute="leading" secondItem="UJc-D3-Vjw" secondAttribute="leading" id="iWn-gs-2UX"/>
+                            <constraint firstItem="UJc-D3-Vjw" firstAttribute="bottom" secondItem="MZz-vZ-Kn5" secondAttribute="bottom" constant="100" id="izF-lS-3f9"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="cPN-bT-hP2"/>
@@ -170,7 +170,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="78C-4M-EMG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1758" y="75"/>
+            <point key="canvasLocation" x="1757.9710144927537" y="75"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="jkw-Ia-gcM">

@@ -20,6 +20,7 @@ class EditNoteViewController: UIViewController {
         super.viewDidLoad()
         
         textView.text = note?.text
+        textView.allowsEditingTextAttributes = true
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -32,7 +33,7 @@ class EditNoteViewController: UIViewController {
     
     // MARK:- Methods to implement
     private func updateNote() {
-        // TODO update the note in database
+        
         print("Updating note")
         
         note.lastUpdated = Date()
@@ -40,7 +41,7 @@ class EditNoteViewController: UIViewController {
     }
     
     private func deleteNote() {
-        // TODO delete the note from database
+        
         print("Deleting note")
         
         delegate?.deleteNote(with: note.id)

@@ -18,6 +18,7 @@ class ListNotesViewController: UIViewController {
     @IBOutlet weak private var notesCountLbl: UILabel!
     private let searchController = UISearchController()
     
+
     private var allNotes: [Note] = [] {
         didSet {
             notesCountLbl.text = "\(allNotes.count) \(allNotes.count == 1 ? "Note" : "Notes")"
@@ -28,6 +29,7 @@ class ListNotesViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         self.navigationController?.navigationBar.shadowImage = UIImage()
         tableView.contentInset = .init(top: 0, left: 0, bottom: 30, right: 0)
@@ -61,9 +63,7 @@ class ListNotesViewController: UIViewController {
     private func createNote() -> Note {
         let note = Note()
         
-        // TODO Save note in database
         
-        // Update table
         allNotes.insert(note, at: 0)
         tableView.insertRows(at: [IndexPath(row: 0, section: 0)], with: .automatic)
         
@@ -71,20 +71,16 @@ class ListNotesViewController: UIViewController {
     }
     
     private func fetchNotesFromStorage() {
-        // TODO Get all saved notes
         print("Fetching all notes")
     }
     
     private func deleteNoteFromStorage(_ note: Note) {
-        // TODO delete the note
         print("Deleting note")
         
-        // Update the list
         deleteNote(with: note.id)
     }
     
     private func searchNotesFromStorage(_ text: String) {
-        // TODO Get all notes that have this text
         print("Searching notes")
     }
 }
@@ -156,7 +152,6 @@ extension ListNotesViewController: ListNotesDelegate {
         filteredNotes.remove(at: indexPath.row)
         tableView.deleteRows(at: [indexPath], with: .automatic)
         
-        // just so that it doesn't come back when we search from the array
         allNotes.remove(at: indexForNote(id: id, in: allNotes).row)
     }
 }
